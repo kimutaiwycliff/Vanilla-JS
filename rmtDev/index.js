@@ -65,7 +65,7 @@ const submitHandler = event => {
             numberEl.textContent = jobItems.length;
 
             // render job list
-            jobItems.forEach(jobItem => {
+            jobItems.slice(0,7).forEach(jobItem => {
                 const newJobItemHTML = `
                     <li class="job-item">
                         <a class="job-item__link" href="${jobItem.id}">
